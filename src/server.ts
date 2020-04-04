@@ -1,8 +1,6 @@
 import express, {Request, Response} from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
-import {FeedItem} from "../../../exercises/udacity-c2-restapi/src/controllers/v0/feed/models/FeedItem";
-import * as AWS from "../../../exercises/udacity-c2-restapi/src/aws";
 import Jimp from "jimp";
 
 (async () => {
