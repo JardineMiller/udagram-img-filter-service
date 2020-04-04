@@ -27,7 +27,7 @@ import Jimp from "jimp";
         try {
             await Jimp.read(url);
         } catch(e) {
-            res.status(400).send("invalid url provided");
+            res.status(422).send("invalid url provided");
         }
 
         const image_path = await filterImageFromURL(url);
